@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#081c43" />
+  <meta name="description" content="Tokyo Blue — an editorial showroom dedicated to iconic Japanese cars of the 1990s." />
+  <title>TOKYO BLUE — Japanese 90s Car Culture</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;500;600;700;800;900&family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement"><span>東京発 · EST. 1996</span><span class="announcement-center">THE GOLDEN ERA NEVER ENDS</span><span>JDM CULTURE / WORLDWIDE</span></div>
+  <header class="site-header" id="top">
+    <a class="logo" href="#top" aria-label="Tokyo Blue home"><span class="logo-symbol">東</span><span class="logo-text">TOKYO<span>BLUE</span><small>CLASSIC MOTOR CLUB</small></span></a>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation"><a href="#stories">THE JOURNAL</a><a href="#collection">THE COLLECTION</a><a href="#about">OUR STORY</a><a href="#contact">CONTACT</a></nav>
+    <div class="header-actions"><button class="search-toggle" id="searchToggle" aria-label="Search stories" title="Search stories"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="10.8" cy="10.8" r="6.7"/><path d="m16 16 5 5"/></svg></button><a class="header-cta" href="#collection">EXPLORE CARS <span>↗</span></a><button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button></div>
+  </header>
+  <div class="search-bar" id="searchBar" hidden><div class="search-inner"><label for="searchInput">SEARCH THE ARCHIVE</label><input id="searchInput" type="search" placeholder="Try “Skyline”, “RX-7”, or “culture”..." /><button id="closeSearch" aria-label="Close search">✕</button></div></div>
+
+  <main>
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-photo" role="img" aria-label="Japanese sports car in a dramatic night setting"></div>
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-side">平成時代の伝説 <span>—</span> JAPAN 1990—1999</div>
+      <div class="hero-content"><div class="eyebrow"><i></i> INDEPENDENT JDM JOURNAL & SHOWROOM <span> / ISSUE 001</span></div><p class="hero-jp">あの時代の、あの鼓動。</p><h1 id="heroTitle">BUILT IN THE <em>90s.</em><br/>DRIVEN <span>FOREVER.</span></h1><p class="hero-copy">A love letter to the machines, midnight streets, and unmistakable spirit of Japan's golden automotive era.</p><div class="hero-buttons"><a class="btn btn-light" href="#stories">EXPLORE THE JOURNAL <span>↗</span></a><a class="btn btn-outline" href="#collection">VIEW THE COLLECTION <span>→</span></a></div></div>
+      <div class="hero-bottom"><span>01 / 04 &nbsp; <b>THE GOLDEN ERA</b></span><span class="scroll-text">SCROLL TO EXPLORE <span>↓</span></span><span>東京・日本 &nbsp; / &nbsp; TOKYO, JAPAN</span></div>
+      <div class="vertical-mark" aria-hidden="true">蒼い時代</div>
+    </section>
+
+    <section class="ticker" aria-label="Featured Japanese automotive icons"><div class="ticker-track">SKYLINE GT-R <b>✦</b> SUPRA MK4 <b>✦</b> RX-7 FD3S <b>✦</b> NSX NA1 <b>✦</b> SILVIA S15 <b>✦</b> THE NINETIES LIVE ON <b>✦</b> SKYLINE GT-R <b>✦</b> SUPRA MK4 <b>✦</b> RX-7 FD3S <b>✦</b></div></section>
+
+    <section class="intro content-width" id="stories"><div><p class="section-kicker">01 / THE JOURNAL <span>— 読み物</span></p><h2>STORIES FROM<br/><em>THE STREETS.</em></h2></div><div class="intro-right"><p>More than horsepower. These are the stories, people, and machines that made a generation fall in love with driving.</p><span>CURATED WITH OBSESSION. READ WITH PASSION.</span></div></section>
+
+    <section class="journal content-width"><div class="journal-tools"><div class="filters" id="filters" role="group" aria-label="Filter stories"><button class="filter active" data-filter="all" aria-pressed="true">ALL STORIES <span>06</span></button><button class="filter" data-filter="culture" aria-pressed="false">CULTURE</button><button class="filter" data-filter="legends" aria-pressed="false">LEGENDS</button><button class="filter" data-filter="garage" aria-pressed="false">GARAGE NOTES</button></div><span class="sort-label">THE ARCHIVE / 1990—NOW</span></div><div class="stories-grid" id="storiesGrid"></div><div class="empty-state" id="emptyState" hidden><h3>NO STORIES FOUND.</h3><p>Try another search or select a different category.</p><button class="btn btn-blue" id="resetSearch">RESET FILTERS ↗</button></div><div class="journal-footer"><span>END OF THE ARCHIVE — FOR NOW.</span><a href="#contact">GOT A STORY? TELL US <span>↗</span></a></div></section>
+
+    <section class="manifesto" id="about"><div class="manifesto-inner content-width"><div class="manifesto-stamp">TB / 96 <span>東京</span></div><div class="manifesto-main"><p class="section-kicker">THE PHILOSOPHY — 私たちについて</p><h2>NOT JUST CARS.<br/><em>A WAY OF LIFE.</em></h2><p>We believe the best cars aren't simply built — they're felt. Tokyo Blue is a home for the timeless silhouettes, mechanical soul, and late-night stories of Japan's 1990s automotive revolution.</p><a href="#collection" class="text-link">MEET THE MACHINES <span>↗</span></a></div><div class="manifesto-vertical">走り続ける理由がある。</div></div></section>
+
+    <section class="collection content-width" id="collection"><div class="collection-heading"><div><p class="section-kicker">02 / THE SHOWROOM <span>— 名車</span></p><h2>THE ICONS.<br/><em>THE OBSESSION.</em></h2></div><p>An ever-changing collection of 90s legends. These are sample showcase listings — contact us for current availability.</p></div><div class="car-grid" id="carGrid"></div><div class="collection-note"><span>✳</span> LOVE SOMETHING YOU SEE? EVERY GREAT BUILD STARTS WITH A CONVERSATION. <a href="mailto:hello@tokyoblue.example">GET IN TOUCH ↗</a></div></section>
+
+    <section class="newsletter" id="contact"><div class="newsletter-pattern" aria-hidden="true">東京</div><div class="newsletter-content content-width"><div><p class="section-kicker">03 / STAY CONNECTED</p><h2>NEVER MISS<br/><em>THE NEXT RUN.</em></h2><p>New stories, rare finds, and a little midnight nostalgia. No noise, just the good stuff.</p></div><form id="newsletterForm" class="newsletter-form"><label for="emailInput">JOIN THE MIDNIGHT MAILING LIST</label><div class="newsletter-input"><input type="email" id="emailInput" placeholder="YOUR EMAIL ADDRESS" required /><button type="submit" aria-label="Subscribe">↗</button></div><small id="formMessage" role="status">BY SUBSCRIBING, YOU AGREE TO RECEIVE UPDATES.</small></form></div></section>
+  </main>
+  <footer class="footer"><div class="footer-top content-width"><a class="logo footer-logo" href="#top"><span class="logo-symbol">東</span><span class="logo-text">TOKYO<span>BLUE</span><small>CLASSIC MOTOR CLUB</small></span></a><p>FOR THE CARS THAT MADE US.<br/>FOR THE ROADS STILL AHEAD.</p><a href="#top" class="back-top">BACK TO TOP ↑</a></div><div class="footer-bottom content-width"><span>© <span id="year"></span> TOKYO BLUE. MADE FOR THE DRIVE.</span><span>東京 · JAPAN / EVERY MILE HAS A STORY</span><span>DESIGNED WITH <b>♥</b> FOR THE 90s</span></div></footer>
+  <dialog class="article-dialog" id="articleDialog" aria-labelledby="dialogTitle"><button class="dialog-close" id="dialogClose" aria-label="Close article">✕</button><div id="articleContent"></div></dialog>
+</body>
+</html>
